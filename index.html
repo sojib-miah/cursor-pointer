@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-twelve</title>
+
+    <!-- custome css link here  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>cursore follow on mousemove</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto expedita ullam pariatur. Amet porro eveniet sit consequuntur voluptate perspiciatis perferendis, dignissimos ipsa alias? Culpa impedit dignissimos vero. Eligendi repellat corrupti voluptatibus deserunt. Autem doloremque, fugiat labore laborum minus dolor quod provident veniam vitae hic a aliquid illo consectetur facere eum! Fugiat natus ut architecto assumenda vitae a perspiciatis ipsam! Est, necessitatibus autem quis aliquam blanditiis consectetur accusamus voluptatibus repellat nobis repellendus omnis voluptas ad, facere, laboriosam amet iure iusto dolorem error harum reprehenderit culpa molestiae praesentium ea accusantium. Consequuntur temporibus ratione nihil et minima maxime culpa ullam sit eveniet magnam.</p>
+        <a href="#">hi every one</a>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+
+
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+
+        document.addEventListener("mousemove", function(e){
+            cursor.style.cssText = cursor2.style.cssText ="left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+</body>
+</html>
